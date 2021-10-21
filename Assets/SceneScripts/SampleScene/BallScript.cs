@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using TMPro;
+using UnityEngine;
 
 namespace SceneScripts.SampleScene {
     public class BallScript : MonoBehaviour {
-        public Vector3 gravityVector;
-        public float acceleration = 2;
+        private Vector3 gravityVector;
+        public float acceleration;
+        public TextMeshProUGUI tmpx;
+        public TextMeshProUGUI tmpy;
         
         private void Start() {
             gravityVector = Input.acceleration;
@@ -15,6 +19,9 @@ namespace SceneScripts.SampleScene {
 
             gravityVector.x = Input.acceleration.x;
             gravityVector.y = Input.acceleration.y;
+
+            tmpx.SetText("Gravity X: " + gravityVector.x);
+            tmpy.SetText("Gravity Y: " + gravityVector.y);
             
             // clamp acceleration vector to unit sphere
             if (gravityVector.sqrMagnitude > 1)
