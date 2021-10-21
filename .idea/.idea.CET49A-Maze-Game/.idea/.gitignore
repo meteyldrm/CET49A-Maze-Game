@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.CET49A-Maze-Game.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\AORUS\Desktop\IMPORTANT\Unity\CET49A-Maze-Game\.idea\.idea.CET49A-Maze-Game\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
