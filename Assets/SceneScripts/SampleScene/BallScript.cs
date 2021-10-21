@@ -8,8 +8,11 @@ namespace SceneScripts.SampleScene {
         public float acceleration;
         public TextMeshProUGUI tmpx;
         public TextMeshProUGUI tmpy;
+
+        public Rigidbody rb;
         
         private void Start() {
+            rb = GetComponent<Rigidbody>();
             gravityVector = Input.acceleration;
             gravityVector.z = 0;
         }
@@ -30,8 +33,7 @@ namespace SceneScripts.SampleScene {
             // Make it move 10 meters per second instead of 10 meters per frame...
             gravityVector *= Time.fixedDeltaTime;
 
-            // Move object
-            transform.Translate(gravityVector * acceleration);
+            rb.velocity += gravityVector * acceleration;
         }
     }
 }
