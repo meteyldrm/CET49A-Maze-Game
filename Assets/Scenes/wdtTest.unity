@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 60
+  ball: {fileID: 0}
 --- !u!64 &193932656
 MeshCollider:
   m_ObjectHideFlags: 0
