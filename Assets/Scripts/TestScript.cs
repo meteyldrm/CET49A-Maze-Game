@@ -9,7 +9,7 @@ public class TestScript : MonoBehaviour
     public GameObject ball;
 
     private void Start() {
-        ball = GameObject.Find("Sphere").GetComponent<GameObject>();
+        ball = GameObject.Find("Sphere");
     }
 
     void Update()
@@ -27,7 +27,8 @@ public class TestScript : MonoBehaviour
         // }
     }
 
-    void FixedUpdate() {
+    void FixedUpdate() 
+    {
         transform.RotateAround(ball.transform.position, Vector3.forward, GravityController.Instance.angle * Time.fixedDeltaTime);
         Debug.Log(GravityController.Instance.angle);
     }
