@@ -29,7 +29,6 @@ public class TestScript : MonoBehaviour
 
     void FixedUpdate() 
     {
-        transform.RotateAround(ball.transform.position, Vector3.forward, GravityController.Instance.angle * Time.fixedDeltaTime);
-        Debug.Log(GravityController.Instance.angle);
+        transform.RotateAround(ball.transform.position, Vector3.forward, GravityController.Instance.angle * turnSpeed * Time.fixedDeltaTime);
     }
 }
