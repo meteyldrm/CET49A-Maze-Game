@@ -1,39 +1,38 @@
 ﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
-namespace SceneScripts.SampleScene {
-    public class BallScript : MonoBehaviour {
-        private Vector3 gravityVector;
-        public float acceleration;
-        public TextMeshProUGUI tmpx;
-        public TextMeshProUGUI tmpy;
+public class BallScript : MonoBehaviour {
+    public GameObject wall;
+    public GameObject restaurant;
+    public TextMeshProUGUI tmp;
+    private int score = 0;
+    private bool canWin = false;
 
-        public Rigidbody rb;
-        
-        private void Start() {
-            rb = GetComponent<Rigidbody>();
-            gravityVector = Input.acceleration;
-            gravityVector.z = 0;
+    private void Start() {
+        StartCoroutine(Wait(3));
+    }
+
+    IEnumerator Wait(int time) {
+        yield return new WaitForSeconds(time);
+        tmp.gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        other.gameObject.SetActive(false);
+        score += 1;
+
+        if (canWin) {
+            tmp.text = "You beat the game! Congratulations!";
+            tmp.gameObject.SetActive(true);
         }
+    }
 
-        private void FixedUpdate() {
-            //Physics stuff
-
-            gravityVector.x = Input.acceleration.x;
-            gravityVector.y = Input.acceleration.y;
-
-            tmpx.SetText("Gravity X: " + gravityVector.x);
-            tmpy.SetText("Gravity Y: " + gravityVector.y);
-            
-            // clamp acceleration vector to unit sphere
-            if (gravityVector.sqrMagnitude > 1)
-                gravityVector.Normalize();
-
-            // Make it move 10 meters per second instead of 10 meters per frame...
-            gravityVector *= Time.fixedDeltaTime;
-
-            rb.velocity += gravityVector * acceleration;
+    private void Update() {
+        if (score >= 2) {
+            wall.gameObject.SetActive(false);
+            canWin = true;
         }
     }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 public class TestScript : MonoBehaviour
 {
     [SerializeField] private float turnSpeed;
-    private int n;
-    private int test = 0;
     public GameObject ball;
 
     private void Start() {
