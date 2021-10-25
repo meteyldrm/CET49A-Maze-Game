@@ -12,21 +12,14 @@ public class TestScript : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.RotateAround(ball.transform.position, Vector3.forward, (turnSpeed * Time.deltaTime));
+        }
         
-        
-        // if (Input.GetKey(KeyCode.A))
-        // {
-        //     transform.Rotate(Vector3.forward * (turnSpeed * Time.deltaTime));
-        // }
-        //
-        // if (Input.GetKey(KeyCode.D))
-        // {
-        //     transform.Rotate(Vector3.back * (turnSpeed * Time.deltaTime));
-        // }
-    }
-
-    void FixedUpdate() 
-    {
-        transform.RotateAround(ball.transform.position, Vector3.forward, GravityController.Instance.angle * turnSpeed * Time.fixedDeltaTime);
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.RotateAround(ball.transform.position, Vector3.back, (turnSpeed * Time.deltaTime));
+        }
     }
 }
