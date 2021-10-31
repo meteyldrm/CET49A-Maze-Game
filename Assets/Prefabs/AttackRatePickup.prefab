@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostTime: 7
-  boostAmount: 0.5
+  boostAmount: 0.65
