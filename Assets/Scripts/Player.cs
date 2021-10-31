@@ -3,6 +3,7 @@ using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidbody2D;
     [SerializeField] private GameObject playerBullet;
     [SerializeField] private Transform playerRightHand;
+    [SerializeField] private Slider healthSlider;
     
     [Header("Attributes")]
     public float maxHealth;
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        healthSlider.value = _currentHealth / maxHealth;
         playerAnimator.SetFloat(Speed,Math.Abs(playerRigidbody2D.velocity.x));
 
         if (Input.GetKeyDown(KeyCode.A))
@@ -130,11 +133,13 @@ public class Player : MonoBehaviour
         {
             transform.Rotate(0,180,0);
             _playerDirection = 1;
+            healthSlider.direction = Slider.Direction.RightToLeft;
         }
         else if (playerRigidbody2D.velocity.x < -0.05f && _playerDirection == 1)
         {
             transform.Rotate(0,-180,0);
             _playerDirection = -1;
+            healthSlider.direction = Slider.Direction.LeftToRight;
         }
     }
 
