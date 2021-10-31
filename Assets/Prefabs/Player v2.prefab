@@ -108,7 +108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.00000071525574, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -9.999997, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2230528441412321456
@@ -1481,6 +1481,8 @@ MonoBehaviour:
   playerBullet: {fileID: 2368062080791411658, guid: 49f0e03c66b9a4047ad01f833f246fca, type: 3}
   playerRightHand: {fileID: 7201058958117282905}
   healthSlider: {fileID: 5110441158230162245}
+  sliderFillImage: {fileID: 3113642897343767373}
+  sliderBgImage: {fileID: 1446598090570781939}
   maxHealth: 100
   moveSpeed: 300
   jumpHeight: 200
