@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerBullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float bulletDamage;
@@ -13,9 +13,9 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Enemy>().TakeDamage(bulletDamage);
+            other.gameObject.GetComponent<Player>().TakeDamage(bulletDamage);
             Destroy(this.gameObject);
         }
         else if(other.gameObject.CompareTag("Ground"))

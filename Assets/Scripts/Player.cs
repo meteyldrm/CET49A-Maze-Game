@@ -142,10 +142,10 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         if (_isInvulnerable) return;
-        if (_currentHealth - damageAmount < 0)
+        if (_currentHealth - damageAmount <= 0)
         {
             _currentHealth = 0;
-            // DEATH
+            print("death");
         }
         else
         {
