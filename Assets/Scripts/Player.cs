@@ -123,7 +123,6 @@ public class Player : MonoBehaviour
         {
             playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right / 2);
         }
-
         playerRigidbody2D.velocity *= Vector2.one * 0.95f;
         
         

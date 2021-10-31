@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961acef870c681e4a9083a8c99ad7215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBullet: {fileID: 0}
+  enemyBullet: {fileID: 4499658266779761060, guid: 33201aef701fb2544848da8e35c9de45, type: 3}
   maxHealth: 100
   attackRate: 2
   playerIsInSight: 0
@@ -533,7 +533,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 2.5
 --- !u!114 &7622697730059153043
 MonoBehaviour:
   m_ObjectHideFlags: 0
