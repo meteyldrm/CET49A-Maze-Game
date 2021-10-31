@@ -16,8 +16,11 @@ public class Player : MonoBehaviour
     private float _currentHealth;
     
     public float moveSpeed;
+    
     public float attackRate;
     private float _lastAttackTime;
+
+    private bool _isInvulnerable;
     
     // Input Checks
     private int _inputDirection = 0;
@@ -97,6 +100,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
+        if (_isInvulnerable) return;
         if (_currentHealth - damageAmount < 0)
         {
             _currentHealth = 0;
@@ -118,5 +122,18 @@ public class Player : MonoBehaviour
         attackRate -= boostAmount;
         yield return new WaitForSeconds(boostTime);
         attackRate = +boostAmount;
+    }
+
+    public void GainInvulnerability(float boostTime)
+    {
+        StopCoroutine(GainInvulnerabilityCoroutine(0));
+        StartCoroutine(GainInvulnerabilityCoroutine(boostTime));
+    }
+
+    private IEnumerator GainInvulnerabilityCoroutine(float boostTime)
+    {
+        _isInvulnerable = true;
+        yield return new WaitForSeconds(boostTime);
+        _isInvulnerable = false;
     }
 }
