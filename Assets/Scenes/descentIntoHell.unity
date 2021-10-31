@@ -819,6 +819,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rosemary Character
       objectReference: {fileID: 0}
+    - target: {fileID: 8205147978465496845, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6427811
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147978465496845, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.76604986
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147978782914577, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999014
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147978782914577, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.014041799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147978851623482, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_Flip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147979573091962, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_Flip
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147979691777439, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7677446
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147979691777439, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6407561
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147979762832803, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99997145
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147979762832803, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.007558509
+      objectReference: {fileID: 0}
     - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.079
