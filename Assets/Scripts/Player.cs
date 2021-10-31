@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Player : MonoBehaviour
     private float _currentHealth;
     
     public float moveSpeed;
+    public float jumpHeight;
+    public bool onGround;
     
     public float attackRate;
     private float _lastAttackTime;
@@ -65,6 +68,14 @@ public class Player : MonoBehaviour
             aimPoint.z = 0;
             bullet.transform.right = aimPoint - bullet.transform.position;
         }
+
+        if (Input.GetKeyDown(KeyCode.W) && onGround)
+        {
+            playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
+        }
+        
+        
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(15);
@@ -73,7 +84,16 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right);
+        if (onGround)
+        {
+            playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right);
+        }
+        else
+        {
+            playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right / 3);
+        }
+        
+        
         if (playerRigidbody2D.velocity.x > 0.05f && _playerDirection == -1)
         {
             transform.Rotate(0,180,0);
@@ -135,5 +155,21 @@ public class Player : MonoBehaviour
         _isInvulnerable = true;
         yield return new WaitForSeconds(boostTime);
         _isInvulnerable = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            onGround = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            onGround = false;
+        }
     }
 }
