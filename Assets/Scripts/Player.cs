@@ -107,13 +107,6 @@ public class Player : MonoBehaviour
             transform1.localScale = localScale;
             _shrinked = false;
         }
-        
-        
-        
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(15);
-        }
     }
 
     private void FixedUpdate()
