@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
 
     private bool _isInvulnerable;
     private bool _shrinked = false;
+
+    private int _hasJumped = 0;
     
     // Input Checks
     private int _inputDirection = 0;
@@ -73,6 +75,16 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && onGround)
         {
             playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
+            _hasJumped += 1;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.W) && !onGround)
+        {
+            if (_hasJumped <= 2) {
+                playerRigidbody2D.velocity *= new Vector2(1, 0);
+                playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
+                _hasJumped += 1;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.S) && !_shrinked)
@@ -109,7 +121,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right / 3);
+            playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right / 2);
         }
 
         playerRigidbody2D.velocity *= Vector2.one * 0.95f;
@@ -183,6 +195,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             onGround = true;
+            _hasJumped = 0;
         }
     }
 
