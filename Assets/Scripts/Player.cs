@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using Unity.Mathematics;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -156,7 +158,7 @@ public class Player : MonoBehaviour
         if (_currentHealth - damageAmount <= 0)
         {
             _currentHealth = 0;
-            print("death");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else
         {

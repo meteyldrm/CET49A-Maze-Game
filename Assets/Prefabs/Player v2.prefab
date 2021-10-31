@@ -1487,7 +1487,7 @@ MonoBehaviour:
   moveSpeed: 300
   jumpHeight: 200
   onGround: 0
-  attackRate: 1
+  attackRate: 0.75
 --- !u!95 &1311047104454762211
 Animator:
   serializedVersion: 3
