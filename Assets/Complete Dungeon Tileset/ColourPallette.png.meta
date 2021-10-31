@@ -1,7 +1,466 @@
 fileFormatVersion: 2
 guid: 335408ca8c5121a48a6293d0166972b6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4019346841022264173
+    second: ColourPallette_0
+  - first:
+      213: 3605107964544165698
+    second: ColourPallette_1
+  - first:
+      213: -8316466215359226733
+    second: ColourPallette_2
+  - first:
+      213: -242279895488636580
+    second: ColourPallette_3
+  - first:
+      213: 3505182709234384525
+    second: ColourPallette_4
+  - first:
+      213: -1724438035976662397
+    second: ColourPallette_5
+  - first:
+      213: -8908075703389529498
+    second: ColourPallette_6
+  - first:
+      213: 8006077319654689808
+    second: ColourPallette_7
+  - first:
+      213: 8084307922419325303
+    second: ColourPallette_8
+  - first:
+      213: -8425072203009620730
+    second: ColourPallette_9
+  - first:
+      213: -3235341991147433543
+    second: ColourPallette_10
+  - first:
+      213: -5065263200823470928
+    second: ColourPallette_11
+  - first:
+      213: -4709694189459497539
+    second: ColourPallette_12
+  - first:
+      213: -2155913397902025425
+    second: ColourPallette_13
+  - first:
+      213: -8219127749269966233
+    second: ColourPallette_14
+  - first:
+      213: -2948882335197493749
+    second: ColourPallette_15
+  - first:
+      213: -8867147226669760246
+    second: ColourPallette_16
+  - first:
+      213: 8276444040623223393
+    second: ColourPallette_17
+  - first:
+      213: -5092476784068851854
+    second: ColourPallette_18
+  - first:
+      213: -2952553908015727001
+    second: ColourPallette_19
+  - first:
+      213: 6330710905916789205
+    second: ColourPallette_20
+  - first:
+      213: 6962342215646499248
+    second: ColourPallette_21
+  - first:
+      213: -4246793342174922397
+    second: ColourPallette_22
+  - first:
+      213: -9219150634662410038
+    second: ColourPallette_23
+  - first:
+      213: -8834685486645415381
+    second: ColourPallette_24
+  - first:
+      213: -500560666854775995
+    second: ColourPallette_25
+  - first:
+      213: 5210974581996721884
+    second: ColourPallette_26
+  - first:
+      213: 3537137108131946416
+    second: ColourPallette_27
+  - first:
+      213: -3545832204680834021
+    second: ColourPallette_28
+  - first:
+      213: -2654650743642329787
+    second: ColourPallette_29
+  - first:
+      213: 8024635046367634643
+    second: ColourPallette_30
+  - first:
+      213: -729298500426927691
+    second: ColourPallette_31
+  - first:
+      213: -4869976549483496416
+    second: ColourPallette_32
+  - first:
+      213: 7533811226017722534
+    second: ColourPallette_33
+  - first:
+      213: -7356650342759157371
+    second: ColourPallette_34
+  - first:
+      213: 11175314371361658
+    second: ColourPallette_35
+  - first:
+      213: 8261475788447956297
+    second: ColourPallette_36
+  - first:
+      213: 8522995176695892496
+    second: ColourPallette_37
+  - first:
+      213: -8583179417565262435
+    second: ColourPallette_38
+  - first:
+      213: 3486745060585560127
+    second: ColourPallette_39
+  - first:
+      213: 7198623414821137570
+    second: ColourPallette_40
+  - first:
+      213: 2871441199260730407
+    second: ColourPallette_41
+  - first:
+      213: 809558278944906430
+    second: ColourPallette_42
+  - first:
+      213: 412270098775946259
+    second: ColourPallette_43
+  - first:
+      213: 1302221084232228171
+    second: ColourPallette_44
+  - first:
+      213: -1166942522737907235
+    second: ColourPallette_45
+  - first:
+      213: -2187901573220095281
+    second: ColourPallette_46
+  - first:
+      213: 8899733752084191241
+    second: ColourPallette_47
+  - first:
+      213: 8168445946304154926
+    second: ColourPallette_48
+  - first:
+      213: 6383858124077616017
+    second: ColourPallette_49
+  - first:
+      213: -2549212186854777081
+    second: ColourPallette_50
+  - first:
+      213: 235037070084349128
+    second: ColourPallette_51
+  - first:
+      213: -4551462117078704777
+    second: ColourPallette_52
+  - first:
+      213: -608090941871163814
+    second: ColourPallette_53
+  - first:
+      213: -4630184294090325936
+    second: ColourPallette_54
+  - first:
+      213: -3854860617763526951
+    second: ColourPallette_55
+  - first:
+      213: 559096831927240500
+    second: ColourPallette_56
+  - first:
+      213: 3734949145726053598
+    second: ColourPallette_57
+  - first:
+      213: -3308405490779983165
+    second: ColourPallette_58
+  - first:
+      213: -6694265641962981485
+    second: ColourPallette_59
+  - first:
+      213: -3834244630085951846
+    second: ColourPallette_60
+  - first:
+      213: -2306024712105436862
+    second: ColourPallette_61
+  - first:
+      213: -988497791494243852
+    second: ColourPallette_62
+  - first:
+      213: -5915799168289847104
+    second: ColourPallette_63
+  - first:
+      213: 3967371350501767462
+    second: ColourPallette_64
+  - first:
+      213: -3069946465741950007
+    second: ColourPallette_65
+  - first:
+      213: 4230454805979011391
+    second: ColourPallette_66
+  - first:
+      213: -6703532449927032339
+    second: ColourPallette_67
+  - first:
+      213: -188452125116835172
+    second: ColourPallette_68
+  - first:
+      213: 90749832010598516
+    second: ColourPallette_69
+  - first:
+      213: -3609696397849653019
+    second: ColourPallette_70
+  - first:
+      213: 6576038223888561187
+    second: ColourPallette_71
+  - first:
+      213: 3478462124537775043
+    second: ColourPallette_72
+  - first:
+      213: -2177773556121853090
+    second: ColourPallette_73
+  - first:
+      213: -1666959753407969514
+    second: ColourPallette_74
+  - first:
+      213: -674635130144597660
+    second: ColourPallette_75
+  - first:
+      213: 3960904678083988145
+    second: ColourPallette_76
+  - first:
+      213: -8341432751664623455
+    second: ColourPallette_77
+  - first:
+      213: -6527101169952560146
+    second: ColourPallette_78
+  - first:
+      213: -9035818097734183274
+    second: ColourPallette_79
+  - first:
+      213: 2374201344208841250
+    second: ColourPallette_80
+  - first:
+      213: -9134542345631121148
+    second: ColourPallette_81
+  - first:
+      213: -2286949468459441916
+    second: ColourPallette_82
+  - first:
+      213: 8207394075450729141
+    second: ColourPallette_83
+  - first:
+      213: -1605524530908546213
+    second: ColourPallette_84
+  - first:
+      213: -2096057117157513648
+    second: ColourPallette_85
+  - first:
+      213: 180595973397732039
+    second: ColourPallette_86
+  - first:
+      213: 4969275302196683281
+    second: ColourPallette_87
+  - first:
+      213: -201431875412575056
+    second: ColourPallette_88
+  - first:
+      213: 5711193756749764783
+    second: ColourPallette_89
+  - first:
+      213: -6218628279787411848
+    second: ColourPallette_90
+  - first:
+      213: 1954606367041829888
+    second: ColourPallette_91
+  - first:
+      213: -8092212590421348263
+    second: ColourPallette_92
+  - first:
+      213: -4014108047938147151
+    second: ColourPallette_93
+  - first:
+      213: -2289146271452253275
+    second: ColourPallette_94
+  - first:
+      213: -5733169352095235758
+    second: ColourPallette_95
+  - first:
+      213: 6922703983655961927
+    second: ColourPallette_96
+  - first:
+      213: 2523920720777762909
+    second: ColourPallette_97
+  - first:
+      213: 8158161517235728369
+    second: ColourPallette_98
+  - first:
+      213: -7599881021406298925
+    second: ColourPallette_99
+  - first:
+      213: -7969121743014562374
+    second: ColourPallette_100
+  - first:
+      213: 912482777306238388
+    second: ColourPallette_101
+  - first:
+      213: 3518678410372221412
+    second: ColourPallette_102
+  - first:
+      213: -6035547285493560344
+    second: ColourPallette_103
+  - first:
+      213: -1699991225139961831
+    second: ColourPallette_104
+  - first:
+      213: 7471405537420033223
+    second: ColourPallette_105
+  - first:
+      213: 1611935036511984353
+    second: ColourPallette_106
+  - first:
+      213: 3781849597512008673
+    second: ColourPallette_107
+  - first:
+      213: 336134297297399735
+    second: ColourPallette_108
+  - first:
+      213: -6289989190201726090
+    second: ColourPallette_109
+  - first:
+      213: -6852859743186946564
+    second: ColourPallette_110
+  - first:
+      213: 2470993610776495787
+    second: ColourPallette_111
+  - first:
+      213: 3756695879642506694
+    second: ColourPallette_112
+  - first:
+      213: 4664203113116644961
+    second: ColourPallette_113
+  - first:
+      213: -7932681969953224669
+    second: ColourPallette_114
+  - first:
+      213: -3229582703779439436
+    second: ColourPallette_115
+  - first:
+      213: 1081791737852840899
+    second: ColourPallette_116
+  - first:
+      213: 4585409949622184964
+    second: ColourPallette_117
+  - first:
+      213: 925232043637162444
+    second: ColourPallette_118
+  - first:
+      213: 7473316412114263578
+    second: ColourPallette_119
+  - first:
+      213: 2819909390520162200
+    second: ColourPallette_120
+  - first:
+      213: 1801505423979977904
+    second: ColourPallette_121
+  - first:
+      213: -7972452485318581117
+    second: ColourPallette_122
+  - first:
+      213: -6371670394281766454
+    second: ColourPallette_123
+  - first:
+      213: -2177065117699030782
+    second: ColourPallette_124
+  - first:
+      213: -8811541938602702746
+    second: ColourPallette_125
+  - first:
+      213: -812196303692786591
+    second: ColourPallette_126
+  - first:
+      213: 446848142105410574
+    second: ColourPallette_127
+  - first:
+      213: 1578086052983882836
+    second: ColourPallette_128
+  - first:
+      213: 3926146944968320350
+    second: ColourPallette_129
+  - first:
+      213: 2550034528039162795
+    second: ColourPallette_130
+  - first:
+      213: 3918126619179530625
+    second: ColourPallette_131
+  - first:
+      213: 7128788339228665771
+    second: ColourPallette_132
+  - first:
+      213: 6474405243399298042
+    second: ColourPallette_133
+  - first:
+      213: -8269412519751961959
+    second: ColourPallette_134
+  - first:
+      213: -418309642811680616
+    second: ColourPallette_135
+  - first:
+      213: 2106096393711767737
+    second: ColourPallette_136
+  - first:
+      213: -6482508281997080176
+    second: ColourPallette_137
+  - first:
+      213: 407191212799119433
+    second: ColourPallette_138
+  - first:
+      213: 2872713858414085439
+    second: ColourPallette_139
+  - first:
+      213: 7561664107781900057
+    second: ColourPallette_140
+  - first:
+      213: 464614604556853290
+    second: ColourPallette_141
+  - first:
+      213: -5179461578101237376
+    second: ColourPallette_142
+  - first:
+      213: 3239865124474431423
+    second: ColourPallette_143
+  - first:
+      213: 2312993059812563022
+    second: ColourPallette_144
+  - first:
+      213: 4092026031065484849
+    second: ColourPallette_145
+  - first:
+      213: -6749967433386125045
+    second: ColourPallette_146
+  - first:
+      213: 1330110091311286981
+    second: ColourPallette_147
+  - first:
+      213: -6293904806705711425
+    second: ColourPallette_148
+  - first:
+      213: 7720136505484538494
+    second: ColourPallette_149
+  - first:
+      213: -3140157713588069040
+    second: ColourPallette_150
+  - first:
+      213: 1846580083655000199
+    second: ColourPallette_151
+  - first:
+      213: 8928404884676503692
+    second: ColourPallette_152
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +491,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,9 +534,3258 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ColourPallette_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63783018a697c730800000000000000
+      internalID: 4019346841022264173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2472693d79ae70230800000000000000
+      internalID: 3605107964544165698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cd9f62a0af59c80800000000000000
+      internalID: -8316466215359226733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c595e2df7bf33acf0800000000000000
+      internalID: -242279895488636580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8eb1c05a19e4a030800000000000000
+      internalID: 3505182709234384525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38250742eb09118e0800000000000000
+      internalID: -1724438035976662397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66add234858206480800000000000000
+      internalID: -8908075703389529498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c445a77ec4b1f60800000000000000
+      internalID: 8006077319654689808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7791ea2193b313070800000000000000
+      internalID: 8084307922419325303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60508942871241b80800000000000000
+      internalID: -8425072203009620730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_10
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b190c2c991c913d0800000000000000
+      internalID: -3235341991147433543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b41f0da4f194b9b0800000000000000
+      internalID: -5065263200823470928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd9b84761ec3aeb0800000000000000
+      internalID: -4709694189459497539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d5b87ef28a412e0800000000000000
+      internalID: -2155913397902025425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762353ddbdacfed80800000000000000
+      internalID: -8219127749269966233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b060126d3277317d0800000000000000
+      internalID: -2948882335197493749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a014247d39091f480800000000000000
+      internalID: -8867147226669760246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 252
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162feb42106dbd270800000000000000
+      internalID: 8276444040623223393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27707a29853e359b0800000000000000
+      internalID: -5092476784068851854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ef78c2ddb6607d0800000000000000
+      internalID: -2952553908015727001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d19cd207043bd750800000000000000
+      internalID: 6330710905916789205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1d0586b553f9060800000000000000
+      internalID: 6962342215646499248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3697b2da4fb5015c0800000000000000
+      internalID: -4246793342174922397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8412ac75ffe0080800000000000000
+      internalID: -9219150634662410038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22733aab54e46580800000000000000
+      internalID: -8834685486645415381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_25
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543a69fb9b6ad09f0800000000000000
+      internalID: -500560666854775995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_26
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6118df5c9115840800000000000000
+      internalID: 5210974581996721884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_27
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf9e04957f661130800000000000000
+      internalID: 3537137108131946416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14dbde756caacec0800000000000000
+      internalID: -3545832204680834021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_29
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54de87ea639c82bd0800000000000000
+      internalID: -2654650743642329787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4a4eeee0b3d5f60800000000000000
+      internalID: 8024635046367634643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_31
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1f3dab0e201e5f0800000000000000
+      internalID: -729298500426927691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cbd87612e5a6cb0800000000000000
+      internalID: -4869976549483496416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_33
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0f2abe4697d8860800000000000000
+      internalID: 7533811226017722534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581b51f8d7de7e990800000000000000
+      internalID: -7356650342759157371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_35
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bbb53a3e3b72000800000000000000
+      internalID: 11175314371361658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d3eea5578a6a270800000000000000
+      internalID: 8261475788447956297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_37
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a8359d4f2c74670800000000000000
+      internalID: 8522995176695892496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d049c9bcb62e880800000000000000
+      internalID: -8583179417565262435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_39
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38dc86b828636030800000000000000
+      internalID: 3486745060585560127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac29381bd5a6e360800000000000000
+      internalID: 7198623414821137570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_41
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7248b53ae8869d720800000000000000
+      internalID: 2871441199260730407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_42
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 204
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcdc7927f02c3b00800000000000000
+      internalID: 809558278944906430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3143e05787da8b500800000000000000
+      internalID: 412270098775946259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_44
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d9fa83d2b621210800000000000000
+      internalID: 1302221084232228171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9a8e255ff2ecfe0800000000000000
+      internalID: -1166942522737907235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_46
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaa2b47c1303a1e0800000000000000
+      internalID: -2187901573220095281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9085888d1b4328b70800000000000000
+      internalID: 8899733752084191241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_48
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d40745f462c5170800000000000000
+      internalID: 8168445946304154926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b43260425089850800000000000000
+      internalID: 6383858124077616017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_50
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f9c69b5016f9cd0800000000000000
+      internalID: -2549212186854777081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc1d6f48f4034300800000000000000
+      internalID: 235037070084349128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_52
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d50e6b155f5d0c0800000000000000
+      internalID: -4551462117078704777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_53
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56f2aa9280af87f0800000000000000
+      internalID: -608090941871163814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_54
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05047229ae74ebfb0800000000000000
+      internalID: -4630184294090325936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_55
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6ef8b21b8c08ac0800000000000000
+      internalID: -3854860617763526951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_56
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437c11e3b9f42c700800000000000000
+      internalID: 559096831927240500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_57
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 180
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc662d957435d330800000000000000
+      internalID: 3734949145726053598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c27b1d1cbe2612d0800000000000000
+      internalID: -3308405490779983165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_59
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397b1bacdd03913a0800000000000000
+      internalID: -6694265641962981485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_60
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e17c9d2d60acac0800000000000000
+      internalID: -3834244630085951846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_61
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249deaffdba5fffd0800000000000000
+      internalID: -2306024712105436862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f93ab4fe762842f0800000000000000
+      internalID: -988497791494243852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_63
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8488beffbd6eda0800000000000000
+      internalID: -5915799168289847104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_64
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62938b6293fee0730800000000000000
+      internalID: 3967371350501767462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_65
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c33cf564fb5565d0800000000000000
+      internalID: -3069946465741950007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3919bc6b3895ba30800000000000000
+      internalID: 4230454805979011391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_67
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de19bcde0c448f2a0800000000000000
+      internalID: -6703532449927032339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_68
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a5e396acb726df0800000000000000
+      internalID: -188452125116835172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_69
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4780b6ccd78624100800000000000000
+      internalID: 90749832010598516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_70
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e01a2b4048c7edc0800000000000000
+      internalID: -3609696397849653019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_71
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324b44c5ce7c24b50800000000000000
+      internalID: 6576038223888561187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_72
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 156
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c389b16fdaf54030800000000000000
+      internalID: 3478462124537775043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e532e123d7ef6c1e0800000000000000
+      internalID: -2177773556121853090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_74
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617ce3bafe4cdd8e0800000000000000
+      internalID: -1666959753407969514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_75
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4695bba6ce633a6f0800000000000000
+      internalID: -674635130144597660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_76
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba0166a1d5f7f630800000000000000
+      internalID: 3960904678083988145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0983f6b174d3c80800000000000000
+      internalID: -8341432751664623455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_78
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebe0f761141b65a0800000000000000
+      internalID: -6527101169952560146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696128d50535a9280800000000000000
+      internalID: -9035818097734183274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_80
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aa2d22b8bd2f020800000000000000
+      internalID: 2374201344208841250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401c4ee22269b3180800000000000000
+      internalID: -9134542345631121148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_82
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401e431439f1340e0800000000000000
+      internalID: -2286949468459441916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_83
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2e2ee4d6586e170800000000000000
+      internalID: 8207394075450729141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_84
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b350112f708b9e0800000000000000
+      internalID: -1605524530908546213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_85
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056a5e6482f49e2e0800000000000000
+      internalID: -2096057117157513648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_86
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cadc3ab41b918200800000000000000
+      internalID: 180595973397732039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_87
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1122e8a1f8966f440800000000000000
+      internalID: 4969275302196683281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcb79bc6ce543df0800000000000000
+      internalID: -201431875412575056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_89
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa89f7a667c324f40800000000000000
+      internalID: 5711193756749764783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_90
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876a219f68ef2b9a0800000000000000
+      internalID: -6218628279787411848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_91
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cbe378228202b10800000000000000
+      internalID: 1954606367041829888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950fdfcf58fa2bf80800000000000000
+      internalID: -8092212590421348263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_93
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc2c908ff50b48c0800000000000000
+      internalID: -4014108047938147151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_94
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3bd2338915b30e0800000000000000
+      internalID: -2289146271452253275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_95
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251053399d0bf60b0800000000000000
+      internalID: -5733169352095235758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745cef65892621060800000000000000
+      internalID: 6922703983655961927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_97
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58d433f584c60320800000000000000
+      internalID: 2523920720777762909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_98
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffe8171dac973170800000000000000
+      internalID: 8158161517235728369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_99
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc38d71a7cc78690800000000000000
+      internalID: -7599881021406298925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_100
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab576c73ffdf76190800000000000000
+      internalID: -7969121743014562374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_101
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd000d504ac9ac00800000000000000
+      internalID: 912482777306238388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_102
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 108
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e982191f5bd4d030800000000000000
+      internalID: 3518678410372221412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb4517b8bd6d3ca0800000000000000
+      internalID: -6035547285493560344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_104
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9106048dcfa6868e0800000000000000
+      internalID: -1699991225139961831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_105
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccbec640c3cfa760800000000000000
+      internalID: 7471405537420033223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_106
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea9d44106ebe5610800000000000000
+      internalID: 1611935036511984353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e348adfb24db7430800000000000000
+      internalID: 3781849597512008673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_108
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfac3bcc503aa400800000000000000
+      internalID: 336134297297399735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_109
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67baaf4482875b8a0800000000000000
+      internalID: -6289989190201726090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_110
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf574cf1f50c5e0a0800000000000000
+      internalID: -6852859743186946564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6c79cd89bba4220800000000000000
+      internalID: 2470993610776495787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_112
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5e34baff6722430800000000000000
+      internalID: 3756695879642506694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_113
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166b695f4049ab040800000000000000
+      internalID: 4664203113116644961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_114
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328cac807c379e190800000000000000
+      internalID: -7932681969953224669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_115
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc1b7854a73e23d0800000000000000
+      internalID: -3229582703779439436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_116
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbcbaf9adb430f00800000000000000
+      internalID: 1081791737852840899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_117
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ca5ccfd06a2af30800000000000000
+      internalID: 4585409949622184964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc14dcf34a517dc00800000000000000
+      internalID: 925232043637162444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_119
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1eda267ead86b760800000000000000
+      internalID: 7473316412114263578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_120
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8971eb076a4522720800000000000000
+      internalID: 2819909390520162200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_121
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc144963ab300910800000000000000
+      internalID: 1801505423979977904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_122
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384e7e754b82c5190800000000000000
+      internalID: -7972452485318581117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_123
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac156f2f8874397a0800000000000000
+      internalID: -6371670394281766454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201c7ae5fc289c1e0800000000000000
+      internalID: -2177065117699030782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_125
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668012ada4d17b580800000000000000
+      internalID: -8811541938602702746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_126
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1649186d3cf7ab4f0800000000000000
+      internalID: -812196303692786591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_127
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c7cba8406833600800000000000000
+      internalID: 446848142105410574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_128
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4544a1577ec76e510800000000000000
+      internalID: 1578086052983882836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_129
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5562d648d97c7630800000000000000
+      internalID: 3926146944968320350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_130
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba351c084ea836320800000000000000
+      internalID: 2550034528039162795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_131
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189b239a66bff5630800000000000000
+      internalID: 3918126619179530625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_132
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 60
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7ebae793b8ee260800000000000000
+      internalID: 7128788339228665771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_133
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbddb81445b9d950800000000000000
+      internalID: 6474405243399298042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_134
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992340360252d3d80800000000000000
+      internalID: -8269412519751961959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_135
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898d61e989dd13af0800000000000000
+      internalID: -418309642811680616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_136
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0dbe1f28b5a3d10800000000000000
+      internalID: 2106096393711767737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_137
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099490630118906a0800000000000000
+      internalID: -6482508281997080176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_138
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9405d8a2042a6a500800000000000000
+      internalID: 407191212799119433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_139
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f350d10b80eedd720800000000000000
+      internalID: 2872713858414085439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_140
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917492f417d60f860800000000000000
+      internalID: 7561664107781900057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_141
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20e11e6584a27600800000000000000
+      internalID: 464614604556853290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_142
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089dd7df22bde18b0800000000000000
+      internalID: -5179461578101237376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_143
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7a9784a2056fc20800000000000000
+      internalID: 3239865124474431423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_144
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e485212eee6691020800000000000000
+      internalID: 2312993059812563022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_145
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e4f49aefbc9c830800000000000000
+      internalID: 4092026031065484849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_146
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b099097d16c4352a0800000000000000
+      internalID: -6749967433386125045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_147
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca85c0b410857210800000000000000
+      internalID: 1330110091311286981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_148
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6be22ccee87a8a0800000000000000
+      internalID: -6293904806705711425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_149
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e727eeaaf3f632b60800000000000000
+      internalID: 7720136505484538494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_150
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d51ee523beb64d0800000000000000
+      internalID: -3140157713588069040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_151
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780419f6dce50a910800000000000000
+      internalID: 1846580083655000199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColourPallette_152
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88610a10f018eb70800000000000000
+      internalID: 8928404884676503692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
