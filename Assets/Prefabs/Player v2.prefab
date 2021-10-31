@@ -1483,6 +1483,8 @@ MonoBehaviour:
   healthSlider: {fileID: 5110441158230162245}
   sliderFillImage: {fileID: 3113642897343767373}
   sliderBgImage: {fileID: 1446598090570781939}
+  fillColor: {r: 0, g: 1, b: 0, a: 1}
+  bgColor: {r: 1, g: 0, b: 0, a: 1}
   maxHealth: 100
   moveSpeed: 300
   jumpHeight: 200

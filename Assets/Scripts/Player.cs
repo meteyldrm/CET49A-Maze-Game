@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Image sliderFillImage;
     [SerializeField] private Image sliderBgImage;
+    [SerializeField] private Color fillColor;
+    [SerializeField] private Color bgColor;
     
     [Header("Attributes")]
     public float maxHealth;
@@ -184,9 +186,6 @@ public class Player : MonoBehaviour
     private IEnumerator GainInvulnerabilityCoroutine(float boostTime)
     {
         _isInvulnerable = true;
-
-        Color fillColor = sliderFillImage.color;
-        Color bgColor = sliderBgImage.color;
 
         sliderFillImage.color = Color.yellow;
         sliderBgImage.color = Color.yellow;
