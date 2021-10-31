@@ -819,5 +819,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rosemary Character
       objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.021
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068982, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205147980068068983, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf2c99a90a5a1b14e8ca4c5256e49436, type: 3}
