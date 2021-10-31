@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     private float _lastAttackTime;
 
     private bool _isInvulnerable;
+    private bool _shrinked = false;
     
     // Input Checks
     private int _inputDirection = 0;
@@ -72,6 +73,24 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && onGround)
         {
             playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) && !_shrinked)
+        {
+            var transform1 = transform;
+            var localScale = transform1.localScale;
+            localScale = new Vector3(localScale.x,localScale.y / 1.5f,transform1.localPosition.z);
+            transform1.localScale = localScale;
+            _shrinked = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.S) && _shrinked)
+        {
+            var transform1 = transform;
+            var localScale = transform1.localScale;
+            localScale = new Vector3(localScale.x,localScale.y * 1.5f,transform1.localPosition.z);
+            transform1.localScale = localScale;
+            _shrinked = false;
         }
         
         
