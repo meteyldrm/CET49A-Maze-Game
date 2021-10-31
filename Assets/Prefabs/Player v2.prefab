@@ -994,7 +994,7 @@ MonoBehaviour:
   playerRightHand: {fileID: 7201058958117282905}
   maxHealth: 100
   moveSpeed: 300
-  jumpHeight: 250
+  jumpHeight: 200
   onGround: 0
   attackRate: 1
 --- !u!95 &1311047104454762211
