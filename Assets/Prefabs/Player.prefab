@@ -545,10 +545,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4963521103206436308}
   - component: {fileID: 4963521103206436309}
+  - component: {fileID: 2770953582402155789}
   - component: {fileID: 3836911543577321915}
   - component: {fileID: 2770953582402155791}
   - component: {fileID: 4963521103206436332}
-  - component: {fileID: 2770953582402155789}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -592,6 +592,23 @@ MonoBehaviour:
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
+--- !u!114 &2770953582402155789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4963521103206436331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a6753426255e7429a57848563f1a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 3836911543577321915}
+  playerRigidbody2D: {fileID: 2770953582402155791}
+  maxHealth: 100
+  moveSpeed: 300
+  attackRate: 0
 --- !u!95 &3836911543577321915
 Animator:
   serializedVersion: 3
@@ -648,22 +665,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.04, y: 0}
   m_Size: {x: 0.2, y: 0.4}
   m_Direction: 0
---- !u!114 &2770953582402155789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4963521103206436331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a6753426255e7429a57848563f1a15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAnimator: {fileID: 3836911543577321915}
-  playerRigidbody2D: {fileID: 2770953582402155791}
-  maxHealth: 100
-  moveSpeed: 300
 --- !u!1 &4963521103217070278
 GameObject:
   m_ObjectHideFlags: 0
