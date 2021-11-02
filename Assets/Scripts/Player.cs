@@ -149,10 +149,9 @@ public class Player : MonoBehaviour
     {
         if (_isDrone) {
             //X component has a bounceback for some reason
-            //TODO: Fix it
             var velocity = _droneRigidbody2D.velocity;
-            velocity.x = Mathf.Lerp(velocity.x, _droneVector.x, 5);
-            velocity.y = Mathf.Lerp(velocity.y, _droneVector.y, 5);
+            velocity += Vector2.Lerp(velocity, _droneVector * 2, 5);
+            print(velocity + " " + _droneVector);
             velocity  *= 0.75f;
             _droneRigidbody2D.velocity = velocity;
         } else {
