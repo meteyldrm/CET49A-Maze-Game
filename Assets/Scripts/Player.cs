@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D _droneRigidbody2D;
     private bool _isDrone = false;
     private Vector2 _droneVector = Vector2.zero;
+    private Vector2 inputVector = Vector2.zero;
 
 
     private int _playerDirection = -1;
@@ -150,8 +151,7 @@ public class Player : MonoBehaviour
         if (_isDrone) {
             //X component has a bounceback for some reason
             var velocity = _droneRigidbody2D.velocity;
-            velocity += Vector2.Lerp(velocity, _droneVector * 2, 5);
-            print(velocity + " " + _droneVector);
+            velocity += Vector2.Lerp(velocity, _droneVector, 2.5f);
             velocity  *= 0.75f;
             _droneRigidbody2D.velocity = velocity;
         } else {
@@ -169,12 +169,14 @@ public class Player : MonoBehaviour
             if (playerRigidbody2D.velocity.x > 0.05f && _playerDirection == -1)
             {
                 transform.Rotate(0,180,0);
+                _drone.transform.Rotate(0,180,0);
                 _playerDirection = 1;
                 healthSlider.direction = Slider.Direction.RightToLeft;
             }
             else if (playerRigidbody2D.velocity.x < -0.05f && _playerDirection == 1)
             {
                 transform.Rotate(0,-180,0);
+                _drone.transform.Rotate(0,-180,0);
                 _playerDirection = -1;
                 healthSlider.direction = Slider.Direction.LeftToRight;
             }
