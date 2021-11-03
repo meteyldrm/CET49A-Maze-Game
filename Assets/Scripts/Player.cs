@@ -32,33 +32,37 @@ public class Player : MonoBehaviour
     private bool _isInvulnerable;
 
     private int _hasJumped = 0;
+    private bool _shrunk;
     
     private GameObject _drone;
     private Rigidbody2D _droneRigidbody2D;
     private bool _isDrone = false;
     private Vector2 inputVector = Vector2.zero;
 
-
     private int _playerDirection = -1;
     private static readonly int Speed = Animator.StringToHash("Speed");
 
-    [SerializeField]
-    private CinemachineVirtualCamera cm_camera; 
-    private CinemachineFramingTransposer cm_ft;
-    private float cm_lookahead_time;
-    private float cm_lookahead_smoothing;
+    private CinemachineVirtualCamera cmCamera; 
+    private CinemachineFramingTransposer cmFramingTransposer;
+    private float cmLookaheadTime;
+    private float cmLookaheadSmoothing;
+    private float cmLensSize;
+    [SerializeField] private float maxLensSize = 1.8f;
+    private float minLensSize;
 
     private void Start()
     {
         _currentHealth = maxHealth;
         _drone = gameObject.transform.Find("DroneTarget").gameObject;
         _droneRigidbody2D = _drone.GetComponent<Rigidbody2D>();
-        cm_ft = cm_camera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        cm_lookahead_time = cm_ft.m_LookaheadTime;
-        cm_lookahead_smoothing = cm_ft.m_LookaheadSmoothing;
+        cmCamera = GameObject.FindObjectOfType<CinemachineVirtualCamera>();
+        cmFramingTransposer = cmCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
+        cmLookaheadTime = cmFramingTransposer.m_LookaheadTime;
+        cmLookaheadSmoothing = cmFramingTransposer.m_LookaheadSmoothing;
+        cmLensSize = cmCamera.m_Lens.OrthographicSize;
+        minLensSize = cmLensSize;
     }
-
-
+    
     private void Update()
     {
         healthSlider.value = _currentHealth / maxHealth;
@@ -114,36 +118,30 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S)) {
             inputVector.y -= 1;
-            if (!_isDrone) {
-                var transform1 = transform;
-                var localScale = transform1.localScale;
-                localScale = new Vector3(localScale.x,localScale.y / 1.5f,transform1.localPosition.z);
-                transform1.localScale = localScale;
-            }
         }
         if (Input.GetKeyUp(KeyCode.S)) {
             inputVector.y += 1;
-            if (!_isDrone) {
-                var transform1 = transform;
-                var localScale = transform1.localScale;
-                localScale = new Vector3(localScale.x,localScale.y * 1.5f,transform1.localPosition.z);
-                transform1.localScale = localScale;
-            }
         }
 
+        #endregion
+        
         if (Input.GetKeyDown(KeyCode.V)) {
             _isDrone = true;
-            cm_ft.m_LookaheadTime = 0;
-            cm_ft.m_LookaheadSmoothing = 0;
+            cmFramingTransposer.m_LookaheadTime = 0;
+            cmFramingTransposer.m_LookaheadSmoothing = 0;
+            StopCoroutine(ZoomCamera(0,0,0,0));
+            StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20));
         }
         if (Input.GetKeyUp(KeyCode.V)) {
             _isDrone = false;
             _drone.transform.localPosition = Vector3.zero;
-            cm_ft.m_LookaheadTime = cm_lookahead_time;
-            cm_ft.m_LookaheadSmoothing = cm_lookahead_smoothing;
+            cmFramingTransposer.m_LookaheadTime = cmLookaheadTime;
+            cmFramingTransposer.m_LookaheadSmoothing = cmLookaheadSmoothing;
+            StopCoroutine(ZoomCamera(0,0,0,0));
+            StartCoroutine(ZoomCamera(cmLensSize, minLensSize, 0.5f, 20));
         }
 
-        #endregion
+        //#endregion
         
         //smoothly reset drone position every frame 
         if (!_isDrone) _droneRigidbody2D.velocity = playerRigidbody2D.velocity;
@@ -161,6 +159,23 @@ public class Player : MonoBehaviour
             if (onGround)
             {
                 playerRigidbody2D.AddForce(moveSpeed * inputVector.x * Time.fixedDeltaTime * Vector2.right);
+                if (inputVector.y < 0) {
+                    if (!_shrunk) {
+                        var transform1 = transform;
+                        var localScale = transform1.localScale;
+                        localScale = new Vector3(localScale.x,localScale.y / 1.5f,transform1.localPosition.z);
+                        transform1.localScale = localScale;
+                        _shrunk = true;
+                    }
+                } else {
+                    if (_shrunk) {
+                        var transform1 = transform;
+                        var localScale = transform1.localScale;
+                        localScale = new Vector3(localScale.x,localScale.y * 1.5f,transform1.localPosition.z);
+                        transform1.localScale = localScale;
+                        _shrunk = false;
+                    }
+                }
             }
             else
             {
@@ -245,8 +260,26 @@ public class Player : MonoBehaviour
         
         _isInvulnerable = false;
     }
-
+    
     #endregion
+
+    IEnumerator ZoomCamera(float from, float to, float time, float steps)
+    {
+        float f = 0;
+
+        cmCamera.m_Lens.OrthographicSize = cmLensSize;
+ 
+        while (f <= 1)
+        {
+            float size = Mathf.Lerp(from, to, f);
+            cmCamera.m_Lens.OrthographicSize = size;
+            cmLensSize = size;
+ 
+            f += 1f/steps;
+ 
+            yield return new WaitForSeconds(time/steps);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
