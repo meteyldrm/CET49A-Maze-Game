@@ -152,7 +152,6 @@ public class Player : MonoBehaviour
         
         //smoothly reset drone position every frame 
         if (!_isDrone) _droneRigidbody2D.velocity = playerRigidbody2D.velocity;
-        if (!_isDrone) _droneRigidbody2D.transform.localPosition = Vector3.zero;
     }
 
     private void FixedUpdate()
