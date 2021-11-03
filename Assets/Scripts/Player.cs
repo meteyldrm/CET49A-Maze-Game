@@ -52,7 +52,8 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private GameObject dronePanel;
-    private Material tentacleMaterial;
+
+    private Coroutine _zoomCameraCoroutine;
 
     private void Start()
     {
@@ -67,7 +68,6 @@ public class Player : MonoBehaviour
         minLensSize = cmLensSize;
 
         dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
-        tentacleMaterial = dronePanel.gameObject.GetComponent<Image>().gameObject.GetComponent<Material>();
     }
     
     private void Update()
@@ -130,15 +130,13 @@ public class Player : MonoBehaviour
             inputVector.y += 1;
         }
 
-        #endregion
-        
         if (Input.GetKeyDown(KeyCode.V)) {
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(true);
             _isDrone = true;
             cmFramingTransposer.m_LookaheadTime = 0;
             cmFramingTransposer.m_LookaheadSmoothing = 0;
-            StopCoroutine(ZoomCamera(0,0,0,0));
-            StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20));
+            if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
+            _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20));
         }
         if (Input.GetKeyUp(KeyCode.V)) {
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
@@ -146,11 +144,11 @@ public class Player : MonoBehaviour
             _drone.transform.localPosition = Vector3.zero;
             cmFramingTransposer.m_LookaheadTime = cmLookaheadTime;
             cmFramingTransposer.m_LookaheadSmoothing = cmLookaheadSmoothing;
-            StopCoroutine(ZoomCamera(0,0,0,0));
-            StartCoroutine(ZoomCamera(cmLensSize, minLensSize, 0.5f, 20));
+            if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
+            _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, minLensSize, 0.5f, 20));
         }
 
-        //#endregion
+        #endregion
         
         //smoothly reset drone position every frame 
         if (!_isDrone) _droneRigidbody2D.velocity = playerRigidbody2D.velocity;
