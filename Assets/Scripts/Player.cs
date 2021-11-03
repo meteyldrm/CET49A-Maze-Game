@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D _droneRigidbody2D;
     private bool _isDrone = false;
     private Vector2 inputVector = Vector2.zero;
+    [SerializeField] private Vector2 droneStopDistance;
 
     private int _playerDirection = -1;
     private static readonly int Speed = Animator.StringToHash("Speed");
@@ -159,7 +160,22 @@ public class Player : MonoBehaviour
         playerRigidbody2D.velocity *= Vector2.one * 0.95f;
         if (_isDrone) {
             var velocity = _droneRigidbody2D.velocity;
-            velocity += Vector2.Lerp(velocity, inputVector, 2.5f);
+            
+            //Limit magnitude for each component of InputVector based on distance
+            var transformVector = inputVector * _droneRigidbody2D.transform.localPosition;
+            Vector2 guidanceVector = droneStopDistance - transformVector;
+            if (guidanceVector.x < 0) {
+                guidanceVector.x = 0;
+            } else if (guidanceVector.x > 1) {
+                guidanceVector.x = 1;
+            }
+            if (guidanceVector.y < 0) {
+                guidanceVector.y = 0;
+            } else if (guidanceVector.y > 1) {
+                guidanceVector.y = 1;
+            }
+            
+            velocity += Vector2.Lerp(velocity, inputVector * guidanceVector, 2.5f);
             velocity  *= 0.75f;
             _droneRigidbody2D.velocity = velocity;
         } else {
