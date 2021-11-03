@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -32,24 +33,29 @@ public class Player : MonoBehaviour
 
     private int _hasJumped = 0;
     
-    // Input Checks
-    private int _inputDirection = 0;
-
     private GameObject _drone;
     private Rigidbody2D _droneRigidbody2D;
     private bool _isDrone = false;
-    private Vector2 _droneVector = Vector2.zero;
     private Vector2 inputVector = Vector2.zero;
 
 
     private int _playerDirection = -1;
     private static readonly int Speed = Animator.StringToHash("Speed");
 
+    [SerializeField]
+    private CinemachineVirtualCamera cm_camera; 
+    private CinemachineFramingTransposer cm_ft;
+    private float cm_lookahead_time;
+    private float cm_lookahead_smoothing;
+
     private void Start()
     {
         _currentHealth = maxHealth;
         _drone = gameObject.transform.Find("DroneTarget").gameObject;
         _droneRigidbody2D = _drone.GetComponent<Rigidbody2D>();
+        cm_ft = cm_camera.GetCinemachineComponent<CinemachineFramingTransposer>();
+        cm_lookahead_time = cm_ft.m_LookaheadTime;
+        cm_lookahead_smoothing = cm_ft.m_LookaheadSmoothing;
     }
 
 
@@ -66,31 +72,29 @@ public class Player : MonoBehaviour
             aimPoint.z = 0;
             bullet.transform.right = aimPoint - bullet.transform.position;
         }
-        
+
+        #region KeyInput
+
         if (Input.GetKeyDown(KeyCode.A))
         {
-            _inputDirection -= 1;
-            _droneVector.x -= 1;
+            inputVector.x -= 1;
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
-            _inputDirection += 1;
-            _droneVector.x += 1;
+            inputVector.x += 1;
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            _inputDirection += 1;
-            _droneVector.x += 1;
+            inputVector.x += 1;
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
-            _inputDirection -= 1;
-            _droneVector.x -= 1;
+            inputVector.x -= 1;
         }
 
         if (Input.GetKeyDown(KeyCode.W)) {
-            _droneVector.y += 1;
+            inputVector.y += 1;
             if (!_isDrone) {
                 if (onGround) {
                     playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
@@ -104,13 +108,12 @@ public class Player : MonoBehaviour
                 }
             }
         }
-
         if (Input.GetKeyUp(KeyCode.W)) {
-            _droneVector.y -= 1;
+            inputVector.y -= 1;
         }
 
         if (Input.GetKeyDown(KeyCode.S)) {
-            _droneVector.y -= 1;
+            inputVector.y -= 1;
             if (!_isDrone) {
                 var transform1 = transform;
                 var localScale = transform1.localScale;
@@ -118,9 +121,8 @@ public class Player : MonoBehaviour
                 transform1.localScale = localScale;
             }
         }
-
         if (Input.GetKeyUp(KeyCode.S)) {
-            _droneVector.y += 1;
+            inputVector.y += 1;
             if (!_isDrone) {
                 var transform1 = transform;
                 var localScale = transform1.localScale;
@@ -131,16 +133,17 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.V)) {
             _isDrone = true;
-            _droneVector = Vector2.zero;
-            _inputDirection = 0;
+            cm_ft.m_LookaheadTime = 0;
+            cm_ft.m_LookaheadSmoothing = 0;
         }
-        
         if (Input.GetKeyUp(KeyCode.V)) {
             _isDrone = false;
             _drone.transform.localPosition = Vector3.zero;
-            _droneVector = Vector2.zero;
-            _inputDirection = 0;
+            cm_ft.m_LookaheadTime = cm_lookahead_time;
+            cm_ft.m_LookaheadSmoothing = cm_lookahead_smoothing;
         }
+
+        #endregion
         
         //smoothly reset drone position every frame 
         if (!_isDrone) _droneRigidbody2D.velocity = playerRigidbody2D.velocity;
@@ -148,22 +151,21 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        playerRigidbody2D.velocity *= Vector2.one * 0.95f;
         if (_isDrone) {
-            //X component has a bounceback for some reason
             var velocity = _droneRigidbody2D.velocity;
-            velocity += Vector2.Lerp(velocity, _droneVector, 2.5f);
+            velocity += Vector2.Lerp(velocity, inputVector, 2.5f);
             velocity  *= 0.75f;
             _droneRigidbody2D.velocity = velocity;
         } else {
             if (onGround)
             {
-                playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right);
+                playerRigidbody2D.AddForce(moveSpeed * inputVector.x * Time.fixedDeltaTime * Vector2.right);
             }
             else
             {
-                playerRigidbody2D.AddForce(moveSpeed * _inputDirection * Time.fixedDeltaTime * Vector2.right / 2);
+                playerRigidbody2D.AddForce(moveSpeed * inputVector.x * Time.fixedDeltaTime * Vector2.right / 2);
             }
-            playerRigidbody2D.velocity *= Vector2.one * 0.95f;
         
         
             if (playerRigidbody2D.velocity.x > 0.05f && _playerDirection == -1)
@@ -182,19 +184,7 @@ public class Player : MonoBehaviour
             }
         }
     }
-
-    public void Heal(float healAmount)
-    {
-        if (_currentHealth + healAmount > maxHealth)
-        {
-            _currentHealth = maxHealth;
-        }
-        else
-        {
-            _currentHealth += healAmount;
-        }
-    }
-
+    
     public void TakeDamage(float damageAmount)
     {
         if (_isInvulnerable) return;
@@ -206,6 +196,20 @@ public class Player : MonoBehaviour
         else
         {
             _currentHealth -= damageAmount;
+        }
+    }
+
+    #region Boosters
+
+    public void Heal(float healAmount)
+    {
+        if (_currentHealth + healAmount > maxHealth)
+        {
+            _currentHealth = maxHealth;
+        }
+        else
+        {
+            _currentHealth += healAmount;
         }
     }
 
@@ -241,6 +245,8 @@ public class Player : MonoBehaviour
         
         _isInvulnerable = false;
     }
+
+    #endregion
 
     private void OnTriggerEnter2D(Collider2D other)
     {
