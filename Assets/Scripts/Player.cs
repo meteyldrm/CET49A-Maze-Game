@@ -50,6 +50,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxLensSize = 1.8f;
     private float minLensSize;
 
+    [SerializeField]
+    private GameObject dronePanel;
+    private Material tentacleMaterial;
+
     private void Start()
     {
         _currentHealth = maxHealth;
@@ -61,6 +65,9 @@ public class Player : MonoBehaviour
         cmLookaheadSmoothing = cmFramingTransposer.m_LookaheadSmoothing;
         cmLensSize = cmCamera.m_Lens.OrthographicSize;
         minLensSize = cmLensSize;
+
+        dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
+        tentacleMaterial = dronePanel.gameObject.GetComponent<Image>().gameObject.GetComponent<Material>();
     }
     
     private void Update()
@@ -126,6 +133,7 @@ public class Player : MonoBehaviour
         #endregion
         
         if (Input.GetKeyDown(KeyCode.V)) {
+            dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(true);
             _isDrone = true;
             cmFramingTransposer.m_LookaheadTime = 0;
             cmFramingTransposer.m_LookaheadSmoothing = 0;
@@ -133,6 +141,7 @@ public class Player : MonoBehaviour
             StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20));
         }
         if (Input.GetKeyUp(KeyCode.V)) {
+            dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
             _isDrone = false;
             _drone.transform.localPosition = Vector3.zero;
             cmFramingTransposer.m_LookaheadTime = cmLookaheadTime;
@@ -145,6 +154,7 @@ public class Player : MonoBehaviour
         
         //smoothly reset drone position every frame 
         if (!_isDrone) _droneRigidbody2D.velocity = playerRigidbody2D.velocity;
+        if (!_isDrone) _droneRigidbody2D.transform.localPosition = Vector3.zero;
     }
 
     private void FixedUpdate()
