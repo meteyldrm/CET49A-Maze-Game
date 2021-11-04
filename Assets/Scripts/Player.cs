@@ -134,6 +134,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.V)) {
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(true);
             _isDrone = true;
+            cmCamera.Follow = _drone.transform;
             cmFramingTransposer.m_LookaheadTime = 0;
             cmFramingTransposer.m_LookaheadSmoothing = 0;
             if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
@@ -143,6 +144,7 @@ public class Player : MonoBehaviour
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
             _isDrone = false;
             _drone.transform.localPosition = Vector3.zero;
+            cmCamera.Follow = gameObject.transform;
             cmFramingTransposer.m_LookaheadTime = cmLookaheadTime;
             cmFramingTransposer.m_LookaheadSmoothing = cmLookaheadSmoothing;
             if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
