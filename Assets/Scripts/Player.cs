@@ -162,7 +162,9 @@ public class Player : MonoBehaviour
             var velocity = _droneRigidbody2D.velocity;
             
             //Limit magnitude for each component of InputVector based on distance
-            var transformVector = inputVector * _droneRigidbody2D.transform.localPosition;
+            var localPosition = _droneRigidbody2D.transform.localPosition;
+            var transformVector = inputVector * localPosition;
+            transformVector = new Vector2(transformVector.x * (_drone.transform.rotation.y==0 ? 1 : -1), transformVector.y);
             Vector2 guidanceVector = droneStopDistance - transformVector;
             if (guidanceVector.x < 0) {
                 guidanceVector.x = 0;
@@ -209,14 +211,14 @@ public class Player : MonoBehaviour
             if (playerRigidbody2D.velocity.x > 0.05f && _playerDirection == -1)
             {
                 transform.Rotate(0,180,0);
-                _drone.transform.Rotate(0,180,0);
+                _drone.transform.rotation = transform.rotation;
                 _playerDirection = 1;
                 healthSlider.direction = Slider.Direction.RightToLeft;
             }
             else if (playerRigidbody2D.velocity.x < -0.05f && _playerDirection == 1)
             {
                 transform.Rotate(0,-180,0);
-                _drone.transform.Rotate(0,-180,0);
+                _drone.transform.rotation = transform.rotation;
                 _playerDirection = -1;
                 healthSlider.direction = Slider.Direction.LeftToRight;
             }
