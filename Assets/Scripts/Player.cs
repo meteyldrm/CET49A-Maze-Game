@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Cinemachine;
+using Environment;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -55,6 +56,8 @@ public class Player : MonoBehaviour
     private GameObject dronePanel;
 
     private Coroutine _zoomCameraCoroutine;
+
+    [SerializeField] private GameObject Movable;
 
     private void Start()
     {
@@ -287,6 +290,7 @@ public class Player : MonoBehaviour
             cmFramingTransposer.m_LookaheadSmoothing = 0;
             if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
             _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20));
+            Movable.GetComponent<MovableMaterialController>().SetMovableState(true);
         } else {
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
             _isDrone = false;
@@ -296,6 +300,7 @@ public class Player : MonoBehaviour
             cmFramingTransposer.m_LookaheadSmoothing = cmLookaheadSmoothing;
             if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
             _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, minLensSize, 0.5f, 20));
+            Movable.GetComponent<MovableMaterialController>().SetMovableState(false);
         }
     }
 
