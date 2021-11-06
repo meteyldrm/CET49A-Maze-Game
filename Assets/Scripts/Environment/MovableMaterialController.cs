@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Environment {
     public class MovableMaterialController : MonoBehaviour {
@@ -43,6 +44,7 @@ namespace Environment {
         }
 
         IEnumerator startCoroutine() {
+            Camera.main.gameObject.AddComponent<Physics2DRaycaster>();
             foreach (Transform child in transform) {
                 child.gameObject.GetComponent<Draggable>().dragColor = droneSelectedColor;
             }

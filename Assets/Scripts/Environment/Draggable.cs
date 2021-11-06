@@ -17,7 +17,6 @@ namespace Environment {
             // addEventSystem();
             
             mainCamera = Camera.main;
-            mainCamera.gameObject.AddComponent<Physics2DRaycaster>();
         }
 
         public void OnBeginDrag(PointerEventData eventData) {
