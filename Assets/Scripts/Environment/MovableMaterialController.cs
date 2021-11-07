@@ -27,7 +27,6 @@ namespace Environment {
 
         IEnumerator droneActive() {
             foreach (Transform child in transform) {
-                child.gameObject.GetComponent<SpriteRenderer>().color = droneActiveColor;
                 child.gameObject.GetComponent<Draggable>().doDrag(true);
             }
 
@@ -36,7 +35,6 @@ namespace Environment {
     
         IEnumerator dronePassive() {
             foreach (Transform child in transform) {
-                child.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 child.gameObject.GetComponent<Draggable>().doDrag(false);
             }
 
@@ -44,9 +42,9 @@ namespace Environment {
         }
 
         IEnumerator startCoroutine() {
-            Camera.main.gameObject.AddComponent<Physics2DRaycaster>();
             foreach (Transform child in transform) {
                 child.gameObject.GetComponent<Draggable>().dragColor = droneSelectedColor;
+                child.gameObject.GetComponent<Draggable>().draggableColor = droneActiveColor;
             }
             
             yield return null;

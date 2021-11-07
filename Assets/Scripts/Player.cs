@@ -44,10 +44,9 @@ public class Player : MonoBehaviour
     private int _playerDirection = -1;
     private static readonly int Speed = Animator.StringToHash("Speed");
 
-    private CinemachineVirtualCamera cmCamera; 
-    private CinemachineFramingTransposer cmFramingTransposer;
-    private float cmLookaheadTime;
-    private float cmLookaheadSmoothing;
+    [SerializeField] private CinemachineVirtualCamera playerCamera;
+    [SerializeField] private CinemachineVirtualCamera droneCamera;
+
     private float cmLensSize;
     [SerializeField] private float maxLensSize = 1.8f;
     private float minLensSize;
@@ -64,12 +63,10 @@ public class Player : MonoBehaviour
         _currentHealth = maxHealth;
         _drone = gameObject.transform.Find("DroneTarget").gameObject;
         _droneRigidbody2D = _drone.GetComponent<Rigidbody2D>();
-        cmCamera = GameObject.FindObjectOfType<CinemachineVirtualCamera>();
-        cmFramingTransposer = cmCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        cmLookaheadTime = cmFramingTransposer.m_LookaheadTime;
-        cmLookaheadSmoothing = cmFramingTransposer.m_LookaheadSmoothing;
-        cmLensSize = cmCamera.m_Lens.OrthographicSize;
+        cmLensSize = playerCamera.m_Lens.OrthographicSize;
         minLensSize = cmLensSize;
+        
+        droneCamera.gameObject.SetActive(false);
 
         dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
     }
@@ -79,7 +76,7 @@ public class Player : MonoBehaviour
         healthSlider.value = _currentHealth / maxHealth;
         playerAnimator.SetFloat(Speed,Math.Abs(playerRigidbody2D.velocity.x));
         
-        if (Input.GetMouseButton(0) && Time.time > _lastAttackTime + attackRate)
+        if (Input.GetMouseButton(0) && Time.time > _lastAttackTime + attackRate && !_isDrone)
         {
             _lastAttackTime = Time.time;
             GameObject bullet = Instantiate(playerBullet, playerRightHand.position,Quaternion.identity);
@@ -285,35 +282,33 @@ public class Player : MonoBehaviour
         if (state) {
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(true);
             _isDrone = true;
-            cmCamera.Follow = _drone.transform;
-            cmFramingTransposer.m_LookaheadTime = 0;
-            cmFramingTransposer.m_LookaheadSmoothing = 0;
+            playerCamera.gameObject.SetActive(false);
+            droneCamera.gameObject.SetActive(true);
             if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
-            _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20));
+            _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, maxLensSize, 0.5f, 20, droneCamera));
             Movable.GetComponent<MovableMaterialController>().SetMovableState(true);
         } else {
             dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
             _isDrone = false;
             _drone.transform.localPosition = Vector3.zero;
-            cmCamera.Follow = gameObject.transform;
-            cmFramingTransposer.m_LookaheadTime = cmLookaheadTime;
-            cmFramingTransposer.m_LookaheadSmoothing = cmLookaheadSmoothing;
+            droneCamera.gameObject.SetActive(false);
+            playerCamera.gameObject.SetActive(true);
             if(_zoomCameraCoroutine != null) StopCoroutine(_zoomCameraCoroutine);
-            _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, minLensSize, 0.5f, 20));
+            _zoomCameraCoroutine = StartCoroutine(ZoomCamera(cmLensSize, minLensSize, 0.5f, 20, playerCamera));
             Movable.GetComponent<MovableMaterialController>().SetMovableState(false);
         }
     }
 
-    IEnumerator ZoomCamera(float from, float to, float time, float steps)
+    IEnumerator ZoomCamera(float from, float to, float time, float steps, CinemachineVirtualCamera activeCamera)
     {
         float f = 0;
 
-        cmCamera.m_Lens.OrthographicSize = cmLensSize;
+        activeCamera.m_Lens.OrthographicSize = cmLensSize;
  
         while (f <= 1)
         {
             float size = Mathf.Lerp(from, to, f);
-            cmCamera.m_Lens.OrthographicSize = size;
+            activeCamera.m_Lens.OrthographicSize = size;
             cmLensSize = size;
  
             f += 1f/steps;
