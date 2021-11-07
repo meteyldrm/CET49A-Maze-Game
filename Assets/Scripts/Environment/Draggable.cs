@@ -12,6 +12,7 @@ namespace Environment {
         [SerializeField] public Color draggableColor;
         [SerializeField] public Color dragColor;
         private bool hasCollisionOverlap;
+        private bool dragging;
 
         [SerializeField] private Vector2 localPositionBounds;
 
@@ -34,13 +35,18 @@ namespace Environment {
             hasCollisionOverlap = false;
         }
 
+        private void OnMouseDown() {
+            if (hasCollisionOverlap) {
+                dragging = true;
+            }
+        }
+
         private void OnMouseDrag() {
-            if (hasCollisionOverlap && canDrag) {
+            if (canDrag && dragging) {
                 if (!doOnceOnDragStart) {
                     this.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                     clickOffset =  Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
                     doOnceOnDragStart = true;
-                    print(clickOffset);
                 }
                 Vector2 tempVec = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) - clickOffset;
                 this.GetComponent<SpriteRenderer>().color = dragColor;
@@ -51,6 +57,8 @@ namespace Environment {
         private void OnMouseUp() {
             if (canDrag) {
                 this.GetComponent<SpriteRenderer>().color = draggableColor;
+                doOnceOnDragStart = false;
+                dragging = false;
             }
         }
 
@@ -60,7 +68,6 @@ namespace Environment {
                 this.GetComponent<SpriteRenderer>().color = draggableColor;
             } else {
                 this.GetComponent<SpriteRenderer>().color = Color.white;
-                clickOffset = Vector2.zero;
                 this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
             }
         }
