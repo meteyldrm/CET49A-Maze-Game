@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private GameObject Movable;
     
+    [SerializeField]
     private TextMeshProUGUI tmp;
 
     private void Start()
@@ -73,7 +74,6 @@ public class Player : MonoBehaviour
 
         dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
         
-        tmp = GameObject.FindWithTag("FinishText").GetComponent<TextMeshProUGUI>();
         StartCoroutine(moveCoroutine());
     }
     

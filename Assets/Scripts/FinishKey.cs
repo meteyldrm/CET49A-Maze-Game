@@ -6,13 +6,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FinishKey : MonoBehaviour {
+    [SerializeField]
     private TextMeshProUGUI tmp;
-    
-    private void Start() {
-        tmp = GameObject.FindWithTag("FinishText").GetComponent<TextMeshProUGUI>();
-
-        StartCoroutine(T1(tmp));
-    }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player")) {
@@ -20,15 +15,9 @@ public class FinishKey : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
-
-    IEnumerator T1(TextMeshProUGUI t) {
-        t.text = "You are probably dead...";
-        yield return new WaitForSeconds(3);
-        t.gameObject.SetActive(false);
-    }
     
     IEnumerator T2(TextMeshProUGUI t) {
-        t.text = "You are now definitely dead.";
+        t.text = "The secrets of the universe are yours. You have won.";
         t.gameObject.SetActive(true);
         yield return new WaitForSeconds(5);
         Application.Quit();
