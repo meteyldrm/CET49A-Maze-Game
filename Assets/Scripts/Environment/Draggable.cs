@@ -14,7 +14,9 @@ namespace Environment {
         private bool hasCollisionOverlap;
         private bool dragging;
 
-        [SerializeField] private Vector2 localPositionBounds;
+        [SerializeField] private Vector2 localPositionUpper;
+        [SerializeField] private Vector2 localPositionLower;
+        private Vector2 startLocalPosition;
 
         private bool doOnceOnDragStart;
         
@@ -25,6 +27,9 @@ namespace Environment {
             // addEventSystem();
             
             mainCamera = Camera.main;
+            localPositionUpper *= 0.16f;
+            localPositionLower *= 0.16f;
+            startLocalPosition = transform.localPosition;
         }
 
         private void OnMouseEnter() {
@@ -49,6 +54,7 @@ namespace Environment {
                     doOnceOnDragStart = true;
                 }
                 Vector2 tempVec = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) - clickOffset;
+                
                 this.GetComponent<SpriteRenderer>().color = dragColor;
                 transform.position = tempVec;
             }

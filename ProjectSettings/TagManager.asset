@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - FinishText
+  - Shoot
+  - Drone
+  - Crouch
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Cinemachine;
 using Environment;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -57,6 +58,8 @@ public class Player : MonoBehaviour
     private Coroutine _zoomCameraCoroutine;
 
     [SerializeField] private GameObject Movable;
+    
+    private TextMeshProUGUI tmp;
 
     private void Start()
     {
@@ -69,6 +72,9 @@ public class Player : MonoBehaviour
         droneCamera.gameObject.SetActive(false);
 
         dronePanel.gameObject.GetComponent<Image>().gameObject.SetActive(false);
+        
+        tmp = GameObject.FindWithTag("FinishText").GetComponent<TextMeshProUGUI>();
+        StartCoroutine(moveCoroutine());
     }
     
     private void Update()
@@ -112,7 +118,7 @@ public class Player : MonoBehaviour
                     playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
                     _hasJumped += 1;
                 } else {
-                    if (_hasJumped <= 2) {
+                    if (_hasJumped <= 1) {
                         playerRigidbody2D.velocity *= new Vector2(1, 0);
                         playerRigidbody2D.AddForce(Vector2.up * jumpHeight,ForceMode2D.Force);
                         _hasJumped += 1;
@@ -178,7 +184,7 @@ public class Player : MonoBehaviour
                     if (!_shrunk) {
                         var transform1 = transform;
                         var localScale = transform1.localScale;
-                        localScale = new Vector3(localScale.x,localScale.y / 1.5f,transform1.localPosition.z);
+                        localScale = new Vector3(localScale.x,localScale.y / 2f,transform1.localPosition.z);
                         transform1.localScale = localScale;
                         _shrunk = true;
                     }
@@ -186,7 +192,7 @@ public class Player : MonoBehaviour
                     if (_shrunk) {
                         var transform1 = transform;
                         var localScale = transform1.localScale;
-                        localScale = new Vector3(localScale.x,localScale.y * 1.5f,transform1.localPosition.z);
+                        localScale = new Vector3(localScale.x,localScale.y * 2f,transform1.localPosition.z);
                         transform1.localScale = localScale;
                         _shrunk = false;
                     }
@@ -324,6 +330,21 @@ public class Player : MonoBehaviour
             onGround = true;
             _hasJumped = 0;
         }
+
+        if (other.gameObject.CompareTag("Shoot")) {
+            other.gameObject.SetActive(false);
+            StartCoroutine(shootCoroutine());
+        }
+        
+        if (other.gameObject.CompareTag("Drone")) {
+            other.gameObject.SetActive(false);
+            StartCoroutine(droneCoroutine());
+        }
+        
+        if (other.gameObject.CompareTag("Crouch")) {
+            other.gameObject.SetActive(false);
+            StartCoroutine(crouchCoroutine());
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -332,5 +353,53 @@ public class Player : MonoBehaviour
         {
             onGround = false;
         }
+    }
+
+    IEnumerator moveCoroutine() {
+        tmp.text = "Use WASD to move";
+        tmp.gameObject.SetActive(true);
+        while (!(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))) {
+            yield return null;
+        }
+        tmp.gameObject.SetActive(false);
+    }
+    
+    IEnumerator shootCoroutine() {
+        tmp.text = "Aim with your mouse, hold left click to shoot";
+        tmp.gameObject.SetActive(true);
+        while (!(Input.GetMouseButton(0))) {
+            yield return null;
+        }
+        tmp.gameObject.SetActive(false);
+    }
+    
+    IEnumerator droneCoroutine() {
+        tmp.text = "Go to drone mode by pressing V";
+        tmp.gameObject.SetActive(true);
+        while (!(Input.GetKeyDown(KeyCode.V))) {
+            yield return null;
+        }
+        tmp.text = "You can move the drone with WASD as well";
+        yield return new WaitForSeconds(2);
+        tmp.gameObject.SetActive(false);
+        StartCoroutine(movableCoroutine());
+    }
+    
+    IEnumerator movableCoroutine() {
+        tmp.text = "You can move some boxes while in this mode";
+        tmp.gameObject.SetActive(true);
+        while (!Input.GetMouseButton(0)) {
+            yield return null;
+        }
+        tmp.gameObject.SetActive(false);
+    }
+    
+    IEnumerator crouchCoroutine() {
+        tmp.text = "Hold S to crouch";
+        tmp.gameObject.SetActive(true);
+        while (!Input.GetKeyDown(KeyCode.S)) {
+            yield return null;
+        }
+        tmp.gameObject.SetActive(false);
     }
 }
